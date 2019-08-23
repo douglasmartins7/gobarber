@@ -1,8 +1,16 @@
-// importar apenas o routes não o express inteiro
 import { Router } from 'express';
+import User from './app/models/User';
 
 const routes = new Router();
 
-routes.get('/', (req, res) => res.json({ message: 'Hello T-Rex Code' }));
+routes.get('/', async (req, res) => {
+  const user = await User.create({
+    name: 'Douglas Martins',
+    email: 'douglas@trexcode.com.br',
+    password_hash: '12346564',
+  });
+
+  return res.json(user);
+});
 
 export default routes;
