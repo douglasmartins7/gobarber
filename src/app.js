@@ -1,6 +1,6 @@
-//Estrutura da aplicação onde registros os midlewares e as rotas
-import express from "express";
-import routes from "./routes";
+// Estrutura da aplicação onde registros os midlewares e as rotas
+import express from 'express';
+import routes from './routes';
 
 class App {
   constructor() {
