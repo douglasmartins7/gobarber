@@ -1,7 +1,7 @@
 Passos para a execução
 
-1. Precisa baixar um software para testar sua api
-   ou postman: https://www.getpostman.com/
+1. Precisa baixar um software para testar sua api.
+   Opção: postman: https://www.getpostman.com/
    ou insomnia: https://insomnia.rest/
 2. Instalar o yarn o npm(dependency management)
 3. Baixar os pacotes com o comando "yarn" ou o "npm install"
@@ -13,5 +13,3 @@ Passos para a execução
    "It looks like you are trying to access MongoDB over HTTP on the native driver port."
 6. Subir o container do redis para fila(queue) com o comando:
    "docker run --name redisbarber -p 6379:6379 -d -t redis:alpine"
-7.
-8.
